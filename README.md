@@ -1,7 +1,12 @@
-# sionic
-
-
-https://backend.icohit.ml/xml
-
-
-UPDATE xml as x, xml_offers as o SET x.price_0 = o.price_0 where x.code=o.code
+[xml_offers](https://github.com/ph1ex0n/sionic/blob/master/db_table_xml_offers.sql)
+- разместить в каталоге /backend/web/data файлы import0_1.xml и offers0_1.xml
+- запустить в консоли из корневого каталога
+```sh
+$ ./yii xml
+$ ./yii xml-offers
+```
+- в консоли mysql запустить команду
+```sh
+MariaDB [(none)]> UPDATE xml as x, xml_offers as o SET x.price_0 = o.price_0 where x.code=o.code
+```
+***Демо результата смотреть тут https://backend.icohit.ml/xml***
