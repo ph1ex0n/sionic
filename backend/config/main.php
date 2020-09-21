@@ -45,7 +45,7 @@ return [
             ],
         ],
         */
-        'urlManager' => [
+        'urlManager' => [// https://forum.yiiframework.com/t/enableprettyurl-true-gii-problem/75139/2
                 'enablePrettyUrl' => true,
                 'showScriptName' => false,
                 'enableStrictParsing' => false,
