@@ -14,4 +14,4 @@ $ ./yii xml-offers
 MariaDB> UPDATE xml as x, xml_offers as o SET x.quantity_0 = o.quantity_0 where x.code=o.code
 MariaDB> UPDATE xml as x, xml_offers as o SET x.price_0 = o.price_0 where x.code=o.code
 ```
-***Демо результата смотреть [тут](https://backend.icohit.ml/xml)***
+***Демо результата смотреть [тут](https://backend.icohit.ml/xml).***
