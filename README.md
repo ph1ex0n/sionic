@@ -1,6 +1,6 @@
 # Sionic
 ### Инструкция по запуску
-- установить yii2
+- установить yii2 advanced
 - скопировать репозиторий в корневой каталог
 - создать в базе данных таблицы [xml](https://github.com/ph1ex0n/sionic/blob/master/db_table_xml.sql) и [xml_offers](https://github.com/ph1ex0n/sionic/blob/master/db_table_xml_offers.sql)
 - разместить в каталоге /backend/web/data файлы import0_1.xml и offers0_1.xml
