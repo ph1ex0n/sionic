@@ -141,7 +141,7 @@ class XmlOffers extends \yii\db\ActiveRecord
     public function getFilesNames()
     {
 
-        $importFiles = $offersFiles = scandir('/var/www/html/icohit.ml/public_html/icohit/backend/web/data/');
+        $importFiles = $offersFiles = scandir(__DIR__.'/../../backend/web/data/');
         foreach ($importFiles as $i => $importFile) if (strpos($importFile, 'import') === false) unset($importFiles[$i]);
         foreach ($offersFiles as $i => $offersFile) if (strpos($offersFile, 'offers') === false) unset($offersFiles[$i]);
         sort($importFiles);
@@ -157,7 +157,7 @@ class XmlOffers extends \yii\db\ActiveRecord
 
         $firstFile = XmlOffers :: getFilesNames();
 
-        return simplexml_load_string(file_get_contents('/var/www/html/icohit.ml/public_html/icohit/backend/web/data/'.$firstFile[1][0]));
+        return simplexml_load_string(file_get_contents(__DIR__.'/../../backend/web/data/'.$firstFile[1][0]));
     }
 
     public function fillOffers()
